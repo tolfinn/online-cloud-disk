@@ -6,7 +6,7 @@
 
 ### 1.用户登录
 
-![](.\img\login.png)
+![](https://github.com/tolfinn/online-cloud-disk/blob/main/img/login.png)
 
 ### 2.用户注册
 
@@ -14,7 +14,7 @@
 
 ### 3.我的文件
 
-![](.\img\myfile.png)
+![](https://github.com/tolfinn/online-cloud-disk/blob/main/img/myfile.png)
 
 ### 4.用户信息
 
@@ -50,5 +50,5 @@
 
 管理员可对用户进行CRUD，更改用户访问权限
 
-![](.\img\admin.png)
+![](https://github.com/tolfinn/online-cloud-disk/blob/main/img/admin.png)
 
