@@ -219,4 +219,11 @@ public interface FileService {
     ResponseData remove(String path, String newpath) ;
 
     ResponseData getalldir();
+
+    /**
+     * 模糊查询
+     * @param name
+     * @return
+     */
+    ResponseData fuzzyQuery(String name);
 }

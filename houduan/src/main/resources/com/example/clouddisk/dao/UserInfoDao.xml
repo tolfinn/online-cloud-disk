@@ -203,6 +203,18 @@
         SELECT * FROM user_info where user_name = #{userName} and password = #{password}
     </select>
 
+    <select id="queryAll" resultType="com.example.clouddisk.entity.UserInfo">
+        SELECT * FROM user_info where level = 1
+    </select>
+
+    <!--模糊查询-->
+    <select id="adminQuery" resultType="com.example.clouddisk.entity.UserInfo">
+        select * from user_info where user_name like concat('%',#{name},'%')
+    </select>
+
+
+
+
 
 </mapper>
 

@@ -294,7 +294,6 @@
         select * from file where  user_name = #{userName} and attribute = #{attribute} and recycle = 1
     </select>
 
-    <!--通过类别查询-->
     <select id="queryByFileId" resultType="com.example.clouddisk.entity.File">
         select * from file where  file_id = #{fileId}
     </select>
@@ -302,12 +301,17 @@
     <select id="queryCollect" resultType="com.example.clouddisk.entity.File">
         select * from file where  user_name = #{userName} and iscollect = 1
     </select>
-
+<!--清空回收站-->
     <delete id="deleteAll">
         delete from file where recycle != 1
     </delete>
+    <!--查所有文件夹-->
     <select id="queryAllDir" resultType="com.example.clouddisk.entity.File" >
-        SELECT * FROM file WHERE type = "dir"
+        select * from file where type = "dir" and recycle = 1
+    </select>
+    <!--模糊查询-->
+    <select id="fuzzyQuery" resultType="com.example.clouddisk.entity.File">
+        select * from file where file_name like concat('%',#{name},'%') and recycle = 1
     </select>
 </mapper>
 

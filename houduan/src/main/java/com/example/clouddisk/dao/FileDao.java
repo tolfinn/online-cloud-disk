@@ -166,6 +166,11 @@ public interface FileDao {
 
     List<File> queryAllDir();
 
-
+    /**
+     * 模糊查询
+     * @param name
+     * @return
+     */
+    List<File> fuzzyQuery(String name);
 }
 

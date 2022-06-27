@@ -70,4 +70,48 @@ public interface UserInfoService {
      * @return
      */
     ResponseData userLogin(String userName, String password);
+
+    /**
+     * 修改密码
+     * @param password
+     * @param newPwd
+     * @return
+     */
+    ResponseData updatePwd(String password,String newPwd);
+
+    /**
+     * 修改用户信息
+     * @param nickname
+     * @param phone
+     * @param email
+     * @return
+     */
+    ResponseData updateMsg(String nickname,String phone,String email);
+
+    /**
+     * 管理员界面
+     * @return
+     */
+    ResponseData admin();
+
+    /**
+     * 管理员更改用户信息
+     * @param userInfo
+     * @return
+     */
+    ResponseData adminUpdate(UserInfo userInfo);
+
+    /**
+     * 管理员根据用户名模糊查找
+     * @param name
+     * @return
+     */
+    ResponseData adminQuery(String name);
+
+    /**
+     * 管理员根据用户id删除
+     * @param id
+     * @return
+     */
+    ResponseData adminDelete(Long id);
 }

@@ -318,5 +318,10 @@ public class FileController {
     public ResponseData remove(String fileid,String parentDir){
        return fileService.remove(fileid,parentDir);
    }
+
+   @GetMapping("fuzzyQuery")
+    public ResponseData fuzzyQuery(String name){
+       return fileService.fuzzyQuery(name);
+   }
 }
 

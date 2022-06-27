@@ -113,7 +113,68 @@ public class UserInfoController {
         return userInfoService.userLogin(userName,password);
    }
 
+    /**
+     * 修改密码
+     * @param password
+     * @param newPwd
+     * @return
+     */
+    @PostMapping("updatePwd")
+    public ResponseData updatePwd(String password,String newPwd){
+       return userInfoService.updatePwd(password,newPwd);
+}
 
+    /**
+     * 更新用户信息
+     * @param nickname
+     * @param phone
+     * @param email
+     * @return
+     */
+    @PostMapping("updateMsg")
+    public ResponseData updateMsg(String nickname,String phone,String email){
+       return userInfoService.updateMsg(nickname,phone,email);
+}
+
+    /**
+     * 管理员界面
+     * @return
+     */
+    @GetMapping("admin")
+    public ResponseData admin(){
+       return userInfoService.admin();
+}
+
+    /**
+     * 管理员更新用户信息
+     * @param userInfo
+     * @return
+     */
+    @PostMapping("adminUpdate")
+    public ResponseData adminUpdate(@RequestBody UserInfo userInfo){
+        System.out.println(userInfo.toString());
+       return userInfoService.adminUpdate(userInfo);
+}
+
+    /**
+     * 模糊查询用户
+     * @param name
+     * @return
+     */
+    @GetMapping("adminQuery")
+    public ResponseData adminQuery(String name){
+       return userInfoService.adminQuery(name);
+}
+
+    /**
+     * 删除用户
+     * @param id
+     * @return
+     */
+    @GetMapping("adminDelete")
+    public ResponseData adminDelete(Long id){
+        return userInfoService.adminDelete(id);
+    }
 
 }
 

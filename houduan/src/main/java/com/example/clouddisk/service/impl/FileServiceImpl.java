@@ -804,5 +804,18 @@ public class FileServiceImpl implements FileService {
         }
 
     }
+
+    @Override
+    public ResponseData fuzzyQuery(String name) {
+        try {
+            List<File> files = fileDao.fuzzyQuery(name);
+            return new ResponseData("6666","请求成功",files);
+        } catch (Exception e) {
+            e.printStackTrace();
+            return new ResponseData("9999", "网络异常");
+        }
+
+
+    }
 }
 

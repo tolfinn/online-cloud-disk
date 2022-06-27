@@ -94,5 +94,11 @@ public interface UserInfoDao {
      */
     UserInfo queryByUserNameAndPwd(String userName,String password);
 
+    List<UserInfo> queryAll();
+
+    List<UserInfo> adminQuery(String name);
+
+
+
 }
 
