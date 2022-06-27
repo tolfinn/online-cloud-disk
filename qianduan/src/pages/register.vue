@@ -10,9 +10,9 @@
         <div class="input-div">
           <el-input @input="inputChange" v-model="username" placeholder="用户名称" prefix-icon="el-icon-user">
           </el-input>
-          <el-input @input="inputChange" v-model="telephone" placeholder="手机号" prefix-icon="el-icon-user">
+          <el-input @input="inputChange" v-model="telephone" placeholder="手机号" prefix-icon="el-icon-phone">
           </el-input>
-          <el-input @input="inputChange" v-model="mail" placeholder="邮箱" prefix-icon="el-icon-user">
+          <el-input @input="inputChange" v-model="mail" placeholder="邮箱" prefix-icon="el-icon-message">
           </el-input>
           <el-input @input="inputChange" v-model="password1" placeholder="密码" :show-password="true"
             prefix-icon="el-icon-key"></el-input>

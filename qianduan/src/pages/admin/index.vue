@@ -13,7 +13,7 @@
         <el-col :span="20" style="height: 100%;display: flex;align-items: center;justify-content: center">
           <div style="width: 96%;height: 100%;display: flex;align-items: center;justify-content: space-between">
             <div style="flex:6">
-              <el-input v-model="input" @keyup.enter.native="searchUser" placeholder="请输入...." style="width: 340px;">
+              <el-input v-model="input" @keyup.enter.native="searchUser" placeholder="输入用户名查找用户..." style="width: 340px;">
               </el-input>
             </div>
 
@@ -99,6 +99,7 @@ export default {
       this.$router.push({
         path: '/admin/operate',
         query: {
+           search:'',
         }
       })
     },

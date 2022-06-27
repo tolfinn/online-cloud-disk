@@ -7,7 +7,7 @@
                     <el-input v-model="form.userName"></el-input>
                 </el-form-item>
                 <el-form-item label="密码">
-                    <el-input type="password" v-model="form.password"></el-input>
+                    <el-input type="password" v-model="form.password" :show-password="true"></el-input>
                 </el-form-item>
                 <el-form-item label="电话">
                     <el-input v-model="form.phone"></el-input>

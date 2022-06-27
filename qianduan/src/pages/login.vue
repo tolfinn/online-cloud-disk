@@ -69,9 +69,9 @@ export default {
         console.log(res);
         if (res.code == 6666) { //请求成功
           //1.判断用户身份。。
-          if (res.data.status == 0) {
-            this.$message.error('账号已被冻结，暂无访问权限');
-            return;
+          if(res.data.status == 0) {
+          this.$message.error('账号已被冻结，暂时无法进入');
+          return;
           }
           //2.storage 和 vuex保存用户数据
           //将用户名放入sessionStorage中
@@ -107,6 +107,16 @@ export default {
       this.isLock = !data;
     });
   },
+      //此方法写在method外面
+    //to: Route: 即将要进入的目标路由对象
+    //from: Route: 当前导航正要离开的路由
+    //next()：必须执行
+ beforeRouteEnter: (to, from, next) => {
+        next(vm => {
+        // vm 就是当前组件的实例相当于上面的 this，所以在 next 方法里你就可以把 vm 当 this 来用了。
+            vm.$store.dispatch("setUser", null);
+        });
+    },
 };
 </script>
 

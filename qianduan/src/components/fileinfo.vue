@@ -209,6 +209,7 @@ export default {
       input: '',  //文件搜索框搜索内容
       file_list: [], //文件列表
       // loading:true, //列表是否加载
+      // doUpload: 'http://192.168.3.22:80' + '/file/upload',
       doUpload: 'http://192.168.42.10:80' + '/file/upload',
       tmp_dir: '/june1234', //当前目录路径
       upLoadData: {},
@@ -354,7 +355,7 @@ export default {
         type: 'success',
         message: '上传成功'
       })
-
+// location.reload();
     },
     //上传失败
     uploadFail() {

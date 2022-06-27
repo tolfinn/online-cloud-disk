@@ -85,7 +85,10 @@ top:-5px">
                                 {{ scope.row.updateTime | formatTime }}
                             </template>
                         </el-table-column>
-                        <el-table-column prop="0" label="有效时间" width="220" show-overflow-tooltip>
+                        <el-table-column prop="0" label="有效时间" width="150" show-overflow-tooltip>
+                                                        <template slot-scope="scope">
+                                7天 
+                            </template>
                         </el-table-column>
                         <el-table-column v-if="false" prop="url" label="url" />
                         <el-table-column v-if="false" prop="index" label="index" />

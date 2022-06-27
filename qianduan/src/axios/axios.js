@@ -8,6 +8,8 @@ import axios from "axios";
 axios.defaults.timeout = 10 * 60000;   // 超时时间  1分钟
 // axios.defaults.baseURL = "http://localhost:8080";   // 默认地址
 axios.defaults.baseURL = "http://192.168.42.10:80";   // 默认地址
+// 192.168.3.22    192.168.42.10
+// axios.defaults.baseURL = "http://192.168.3.22:80";  
 
 //整理数据
 // axios.defaults.transformRequest = function (data) {
