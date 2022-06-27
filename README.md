@@ -1,6 +1,6 @@
 # 在线云盘系统
 
-**技术栈：**SpringBoot+Vue+HDFS
+**技术栈：SpringBoot+Vue+HDFS
 
 ## **部分部分功能展示：**
 
