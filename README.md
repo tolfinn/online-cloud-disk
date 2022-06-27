@@ -10,7 +10,7 @@
 
 ### 2.用户注册
 
-![](.\img\register.png)
+![](https://github.com/tolfinn/online-cloud-disk/blob/main/img/register.png)
 
 ### 3.我的文件
 
@@ -18,7 +18,7 @@
 
 ### 4.用户信息
 
-![](.\img\user_info.png)
+![](https://github.com/tolfinn/online-cloud-disk/blob/main/img/user_info.png)
 
 ### 5.文件操作
 
@@ -26,25 +26,25 @@
 
 上方按钮进行对文件进行上传，选中文件批量删除，在当前目录下新建文件夹等操作
 
-![](.\img\user_operate.png)
+![](https://github.com/tolfinn/online-cloud-disk/blob/main/img/user_operate.png)
 
 以**移动文件**为例，点击‘移动’，选择目标文件夹对相应的文件（文件夹）进行移动
 
-![](.\img\rm_file.png)
+![](https://github.com/tolfinn/online-cloud-disk/blob/main/img/rm_file.png)
 
 ### 6.文件夹逐层展示
 
 使用element-ui面包屑导航，实现对上级多层文件夹的任意访问
 
-![](.\img\show_file.png)
+![](https://github.com/tolfinn/online-cloud-disk/blob/main/img/show_file.png)
 
 ### 7.回收站
 
-![](.\img\recyclebin.png)
+![](https://github.com/tolfinn/online-cloud-disk/blob/main/img/myfile.png)
 
 可以对文件进行还原或彻底删除
 
-![](.\img\recyclebin2.png)
+![](https://github.com/tolfinn/online-cloud-disk/blob/main/img/recyclebin2.png)
 
 ### **8.管理员页面**
 
